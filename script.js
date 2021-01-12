@@ -18,12 +18,15 @@ function revealMessage () {
 }
 
 function countDown() {
-    var newVal=10;
+    var newVal=0;
     var currentVal= document.getElementById("countDownButton").innerHTML;
     if(currentVal>0) {
         newVal= currentVal-1;
     }
-    document.getElementById("countDownButton").innerHTML=newVal;//countdown restarts! haha infinite cruises!
+    document.getElementById("countDownButton").innerHTML=newVal;
+    if(newVal==0) {
+        document.getElementById("hiddenCruiseMessage").style.display='block';
+    }
 }
 
 function revealContactInfo() {
