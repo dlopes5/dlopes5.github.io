@@ -1,0 +1,10 @@
+h3{
+    color:rgb(48, 171, 241);
+}
+.italic{
+    font-style:italic;
+}
+#bold{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight:bold;
+}
